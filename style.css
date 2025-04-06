@@ -2,37 +2,37 @@
   /* league-spartan-300 - latin */
   @font-face {
     font-display: swap; /* Check https://developer.mozilla.org/en-US/docs/Web/CSS/@font-face/font-display for other options. */
-    font-family: 'League Spartan';
+    font-family: "League Spartan";
     font-style: normal;
     font-weight: 300;
-    src: url('/fonts/league-spartan-v11-latin-300.woff2') format('woff2'); /* Chrome 36+, Opera 23+, Firefox 39+, Safari 12+, iOS 10+ */
+    src: url("/fonts/league-spartan-v11-latin-300.woff2") format("woff2"); /* Chrome 36+, Opera 23+, Firefox 39+, Safari 12+, iOS 10+ */
   }
 
   /* league-spartan-regular - latin */
   @font-face {
     font-display: swap; /* Check https://developer.mozilla.org/en-US/docs/Web/CSS/@font-face/font-display for other options. */
-    font-family: 'League Spartan';
+    font-family: "League Spartan";
     font-style: normal;
     font-weight: 400;
-    src: url('/fonts/league-spartan-v11-latin-regular.woff2') format('woff2'); /* Chrome 36+, Opera 23+, Firefox 39+, Safari 12+, iOS 10+ */
+    src: url("/fonts/league-spartan-v11-latin-regular.woff2") format("woff2"); /* Chrome 36+, Opera 23+, Firefox 39+, Safari 12+, iOS 10+ */
   }
 
   /* league-spartan-600 - latin */
   @font-face {
     font-display: swap; /* Check https://developer.mozilla.org/en-US/docs/Web/CSS/@font-face/font-display for other options. */
-    font-family: 'League Spartan';
+    font-family: "League Spartan";
     font-style: normal;
     font-weight: 600;
-    src: url('/fonts/league-spartan-v11-latin-600.woff2') format('woff2'); /* Chrome 36+, Opera 23+, Firefox 39+, Safari 12+, iOS 10+ */
+    src: url("/fonts/league-spartan-v11-latin-600.woff2") format("woff2"); /* Chrome 36+, Opera 23+, Firefox 39+, Safari 12+, iOS 10+ */
   }
 
   /* league-spartan-700 - latin */
   @font-face {
     font-display: swap; /* Check https://developer.mozilla.org/en-US/docs/Web/CSS/@font-face/font-display for other options. */
-    font-family: 'League Spartan';
+    font-family: "League Spartan";
     font-style: normal;
     font-weight: 700;
-    src: url('/fonts/league-spartan-v11-latin-700.woff2') format('woff2'); /* Chrome 36+, Opera 23+, Firefox 39+, Safari 12+, iOS 10+ */
+    src: url("/fonts/league-spartan-v11-latin-700.woff2") format("woff2"); /* Chrome 36+, Opera 23+, Firefox 39+, Safari 12+, iOS 10+ */
   }
 }
 
@@ -153,7 +153,7 @@
     margin: 0;
     background: var(--color-background-light);
     color: var(--c-gray-300);
-    font-family: 'League Spartan', Arial, Helvetica, sans-serif;
+    font-family: "League Spartan", Arial, Helvetica, sans-serif;
   }
 
   body,
@@ -162,7 +162,7 @@
   }
 
   button {
-    font-family: 'League Spartan', Arial, Helvetica, sans-serif;
+    font-family: "League Spartan", Arial, Helvetica, sans-serif;
   }
 
   img {
@@ -505,8 +505,8 @@
         grid-template-columns: calc(128 / 16 * 1rem) 62px 1fr;
         grid-template-rows: repeat(2, auto);
         grid-template-areas:
-          'image line headline'
-          'image . description';
+          "image line headline"
+          "image . description";
       }
 
       &:not(:last-child) {
@@ -641,7 +641,7 @@
       color: var(--color-tab-inactive);
       transition: color 250ms ease-in-out;
 
-      &[aria-selected='true'] {
+      &[aria-selected="true"] {
         color: var(--color-tab-active);
 
         &::before {
@@ -650,7 +650,7 @@
       }
 
       &::before {
-        content: '';
+        content: "";
         display: block;
         width: 48px;
         height: 1px;
@@ -814,13 +814,13 @@
         display: grid;
         grid-template-columns: 1fr 2fr;
         grid-template-areas:
-          'logo location'
-          '. times';
+          "logo location"
+          ". times";
       }
 
       @media (width >= calc(1100 / 16 * 1rem)) {
         grid-template-columns: repeat(3, 1fr);
-        grid-template-areas: 'logo location times';
+        grid-template-areas: "logo location times";
       }
 
       > * {
@@ -831,11 +831,11 @@
     }
 
     .footer__link {
+      grid-area: logo;
     }
 
     .logo {
       margin-block-end: 42px;
-      grid-area: logo;
 
       @media (width < calc(700 / 16 * 1rem)) {
         margin-inline: auto;
